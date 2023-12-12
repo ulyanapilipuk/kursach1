@@ -1,0 +1,117 @@
+body *{
+    margin:0;
+    padding:0;  
+    position: relative;
+    top: 20px;
+}
+  a{
+    text-decoration: none;
+  }
+
+h1{
+    color:#474747;
+    font-family: Dela Gothic One;
+    font-size: clamp(82px, 14.5vw, 280px);
+    font-style: normal;
+    font-weight: 400;
+    }
+
+.container {
+    max-width: 1920px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.Oops{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.Oops-bottom-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.Oops-bottom-text h2 {
+    color: #8e92a3;
+    font-family: Dela Gothic One;
+    font-size: clamp(24px, 5vw, 48px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    letter-spacing: -1.92px;
+   
+    
+}
+.Oops-bottom-text p {
+    color: var(--primaty-grey-dark, #757575);
+    font-family: Montserrat;
+    font-size: clamp(14px, 3vw, 18px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; 
+    letter-spacing: -0.72px;
+    margin-top: 30px;
+    max-width: 396px;
+}
+
+.Oops-btn{
+    width: 165px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    background: var(--primaty-cyan-light, #eb993b);
+    margin-bottom: 49px;
+    margin-top: 30px;
+
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.64px;
+}
+.catpic {
+    flex: 0 1 900px;
+}
+.cat{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: -105px;
+    top: -105px;
+}
+
+@media screen and (max-width: 992px) {
+    .Oops{
+        flex-direction: column-reverse;
+    }
+    .catpic {
+        flex: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .cat{
+        max-width: clamp(100px, 100vw, 576px);
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .Oops-bottom-text {
+        align-items: center;
+    }
+    .Oops-bottom-text br {
+        display: none;
+    }
+}
